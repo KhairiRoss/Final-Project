@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Event Scheduler</h1>
+      <nav>
+        <ul>
+          <li><a href="discover-events.html">Home</a></li>
+          <li><a href="discover-events.html">Discover Events</a></li>
+          <li><a href="schedule-events.html">Schedule Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="schedule-events">
+      <div class="container">
+        <h2>Schedule Events</h2>
+        <form id="scheduleForm">
+          <label for="eventName">Event Name:</label>
+          <input type="text" id="eventName" name="eventName" required>
+          <label for="eventDate">Event Date:</label>
+          <input type="date" id="eventDate" name="eventDate" required>
+          <label for="eventTime">Event Time:</label>
+          <input type="time" id="eventTime" name="eventTime" required>
+          <label for="eventLocation">Event Location:</label>
+          <input type="text" id="eventLocation" name="eventLocation" required>
+          <label for="eventDescription">Event Description:</label>
+          <textarea id="eventDescription" name="eventDescription" required></textarea>
+          <label for="promoteOption">Promote Event:</label>
+          <select id="promoteOption" name="promoteOption">
+            <option value="basic">Basic Promotion (Free)</option>
+            <option value="premium">Premium Promotion ($5)</option>
+            <option value="vip">VIP Promotion ($10)</option>
+          </select>
+          <button type="submit">Schedule Event</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Event Scheduler</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

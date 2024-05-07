@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Event Scheduler</h1>
+      <nav>
+        <ul>
+          <li><a href="discover-events.html">Home</a></li>
+          <li><a href="discover-events.html">Discover Events</a></li>
+          <li><a href="schedule-events.html">Schedule Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="discover-events">
+      <div class="container">
+        <h2>Discover Events</h2>
+        <div class="search-area">
+          <input type="text" id="searchBar" placeholder="Search Events">
+          <button id="searchButton">Search</button>
+        </div>
+        <ul id="eventsList">
+          <!-- Event posts will be dynamically added here -->
+          <li class="event-post">
+            <h3>Music Festival</h3>
+            <p><strong>Date:</strong> August 15, 2025</p>
+            <p><strong>Time:</strong> 2:00 PM - 10:00 PM</p>
+            <p><strong>Description:</strong> Enjoy a day filled with live music from various artists.</p>
+            <p><strong>Location:</strong> Central Park, New York</p>
+            <p><strong>Posted By:</strong> User123</p>
+            <p><strong>Time Posted:</strong> May 7, 2024, 3:30 PM</p>
+            <div class="comments-section">
+              <h4>Comments</h4>
+              <ul class="comments-list">
+                <!-- Comments will be dynamically added here -->
+              </ul>
+              <textarea placeholder="Add a comment"></textarea>
+              <button class="save-button">Save</button>
+            </div>
+          </li>
+          <li class="event-post">
+            <h3>Art Exhibition</h3>
+            <p><strong>Date:</strong> September 5, 2025</p>
+            <p><strong>Time:</strong> 10:00 AM - 6:00 PM</p>
+            <p><strong>Description:</strong> Explore stunning artworks by local artists.</p>
+            <p><strong>Location:</strong> Art Gallery, Downtown</p>
+            <p><strong>Posted By:</strong> User456</p>
+            <p><strong>Time Posted:</strong> May 7, 2024, 4:15 PM</p>
+            <div class="comments-section">
+              <h4>Comments</h4>
+              <ul class="comments-list">
+                <!-- Comments will be dynamically added here -->
+              </ul>
+              <textarea placeholder="Add a comment"></textarea>
+              <button class="save-button">Save</button>
+            </div>
+          </li>
+          <li class="event-post">
+            <h3>Charity Run</h3>
+            <p><strong>Date:</strong> October 10, 2025</p>
+            <p><strong>Time:</strong> 8:00 AM - 12:00 PM</p>
+            <p><strong>Description:</strong> Join us for a fun run to support a charitable cause.</p>
+            <p><strong>Location:</strong> City Park, Main Street</p>
+            <p><strong>Posted By:</strong> User789</p>
+            <p><strong>Time Posted:</strong> May 7, 2024, 5:00 PM</p>
+            <div class="comments-section">
+              <h4>Comments</h4>
+              <ul class="comments-list">
+                <!-- Comments will be dynamically added here -->
+              </ul>
+              <textarea placeholder="Add a comment"></textarea>
+              <button class="save-button">Save</button>
+            </div>
+          </li>
+          <li class="event-post">
+            <h3>Tech Conference</h3>
+            <p><strong>Date:</strong> November 20, 2025</p>
+            <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+            <p><strong>Description:</strong> Explore the latest trends in technology and network with industry experts.</p>
+            <p><strong>Location:</strong> Convention Center, City Center</p>
+            <p><strong>Posted By:</strong> UserABC</p>
+            <p><strong>Time Posted:</strong> May 8, 2024, 9:30 AM</p>
+            <div class="comments-section">
+              <h4>Comments</h4>
+              <ul class="comments-list">
+                <!-- Comments will be dynamically added here -->
+              </ul>
+              <textarea placeholder="Add a comment"></textarea>
+              <button class="save-button">Save</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Event Scheduler</p>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript code for saving events
+    const saveButtons = document.querySelectorAll('.save-button');
+
+    saveButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Add your save event logic here, such as saving the event to the user's profile
+        alert('Event saved!');
+      });
+    });
+  </script>
+</body>
+</html>

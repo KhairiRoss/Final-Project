@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Event Scheduler</h1>
+      <nav>
+        <ul>
+          <li><a href="discover-events.html">Home</a></li>
+          <li><a href="discover-events.html">Discover Events</a></li>
+          <li><a href="schedule-events.html">Schedule Events</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile">
+      <div class="container">
+        <div class="profile-info">
+          <div class="profile-picture">
+            <img id="profilePic" src="default-profile-pic.jpg" alt="Profile Picture">
+            <input type="file" id="profilePicUpload" accept="image/*">
+            <button id="changePicBtn">Change Picture</button>
+          </div>
+          <div class="profile-details">
+            <h2>Your Profile</h2>
+            <p>Welcome to your profile page!</p>
+            <p>Name: John Doe</p>
+            <p>Email: johndoe@example.com</p>
+            <p>Location: New York, USA</p>
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="profile-events">
+          <h3>Posted Events</h3>
+          <ul id="postedEventsList">
+            <li>Music Festival - August 15, 2025</li>
+            <li>Art Exhibition - September 5, 2025</li>
+            <li>Charity Run - October 10, 2025</li>
+            <!-- Add more actual posted events here -->
+          </ul>
+        </div>
+        <div class="profile-events">
+          <h3>Liked Events</h3>
+          <ul id="likedEventsList">
+            <li>Technology Conference - November 20, 2025</li>
+            <li>Community Picnic - July 1, 2025</li>
+            <!-- Add more actual liked events here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Event Scheduler</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
